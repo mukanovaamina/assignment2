@@ -29,6 +29,15 @@ public class MyArrayList<E> implements List<E> {
         elements[size++] = element;
         return true;
     }
+
+    public E get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        return (E) elements[index];
+    }
+
+
 }
 
 
