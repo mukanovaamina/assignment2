@@ -10,10 +10,6 @@ public class MyArrayList<E> implements List<E> {
         size = 0;
     }
 
-    @Override
-    public int size() {
-        return 0;
-    }
 
     @Override
     public boolean contains(Object o) {
@@ -35,6 +31,13 @@ public class MyArrayList<E> implements List<E> {
             throw new IndexOutOfBoundsException();
         }
         return (E) elements[index];
+    }
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
     }
 
 }
