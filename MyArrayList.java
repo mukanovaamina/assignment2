@@ -39,6 +39,14 @@ public class MyArrayList<E> implements List<E> {
     public boolean isEmpty() {
         return size == 0;
     }
+    public boolean contains(Object o) {
+        for (int i = 0; i < size; i++) {
+            if (o.equals(elements[i])) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
 
