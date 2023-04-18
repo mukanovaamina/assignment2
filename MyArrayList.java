@@ -37,7 +37,6 @@ public class MyArrayList<E> implements List<E> {
         return (E) elements[index];
     }
 
-
 }
 
 
