@@ -11,11 +11,6 @@ public class MyArrayList<E> implements List<E> {
     }
 
 
-    @Override
-    public boolean contains(Object o) {
-        return false;
-    }
-
     public boolean add(E element) {
         if (size == elements.length) {
             Object[] newElements = new Object[elements.length * 2];
@@ -47,6 +42,25 @@ public class MyArrayList<E> implements List<E> {
         }
         return false;
     }
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            private int currentIndex = 0;
+
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            public E next() {
+                return (E) elements[currentIndex++];
+            }
+
+            public void remove() {
+                throw new UnsupportedOperationException();
+            }
+
+        };
+    }
+
 
 }
 
