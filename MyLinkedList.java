@@ -76,6 +76,24 @@ private static class Node<E> {
         size--;
         return current.element;
     }
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public boolean contains(Object obj) {
+        Node<E> current = head;
+        while (current != null) {
+            if (obj.equals(current.element)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 
 
 }
