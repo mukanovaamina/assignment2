@@ -32,6 +32,9 @@ public class Main {
         list.add("C");
         System.out.println("Original list: " + list);
 
+        System.out.println("Element at index 0: " + list.get(0));
+        System.out.println("Element at index 1: " + list.get(1));
+        System.out.println("Element at index 2: " + list.get(2));
 
     }
 
