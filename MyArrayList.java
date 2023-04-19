@@ -108,6 +108,14 @@ public class MyArrayList<E> implements List<E> {
         return 0;
     }
 
+    public ListIterator<E> listIterator() {
+        return null;
+    }
+
+    public ListIterator<E> listIterator(int index) {
+        return null;
+    }
+
 
 }
 
