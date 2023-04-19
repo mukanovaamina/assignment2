@@ -20,6 +20,15 @@ public class MyArrayList<E> implements List<E> {
         return false;
     }
 
+    public boolean addAll(Collection<? extends E> c) {
+        return false;
+    }
+
+
+    public boolean addAll(int index, Collection<? extends E> c) {
+        return false;
+    }
+
 
     public boolean add(E element) {
         if (size == elements.length) {
