@@ -41,6 +41,8 @@ public class Main {
         System.out.println("Element at index 1: " + list.get(1));
         System.out.println("Size of the list: " + list.size());
         System.out.println("Is the list empty? " + list.isEmpty());
+        System.out.println("Does the list contain 'A'? " + list.contains("A"));
+        System.out.println("Does the list contain 'D'? " + list.contains("D"));
     }
 
 }
