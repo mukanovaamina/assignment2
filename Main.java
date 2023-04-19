@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Does list contain 25? " + myList.contains(25));
         System.out.println("Removing element at index 1: " + myList.remove(1));
         System.out.println("Updated list: " + myList);
+        System.out.println("Size of list: " + myList.size());
     }
 
 }
