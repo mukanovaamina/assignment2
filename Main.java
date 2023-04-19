@@ -43,6 +43,11 @@ public class Main {
         System.out.println("Is the list empty? " + list.isEmpty());
         System.out.println("Does the list contain 'A'? " + list.contains("A"));
         System.out.println("Does the list contain 'D'? " + list.contains("D"));
-    }
 
+        Iterator<String> itterator = list.iterator();
+        while (itterator.hasNext()) {
+            System.out.println(itterator.next());
+        }
+
+}
 }
