@@ -13,6 +13,12 @@ public class Main {
         System.out.println("Removing element at index 1: " + myList.remove(1));
         System.out.println("Updated list: " + myList);
         System.out.println("Size of list: " + myList.size());
+
+        Iterator<Integer> iterator = myList.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
     }
 
 }
