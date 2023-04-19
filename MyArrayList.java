@@ -37,6 +37,13 @@ public class MyArrayList<E> implements List<E> {
         elements[size++] = element;
         return true;
     }
+    public boolean retainAll(Collection<?> c) {
+        return false;
+    }
+
+    public void clear() {
+
+    }
 
     public E get(int index) {
         if (index < 0 || index >= size) {
