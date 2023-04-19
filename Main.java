@@ -36,6 +36,9 @@ public class Main {
         System.out.println("Element at index 1: " + list.get(1));
         System.out.println("Element at index 2: " + list.get(2));
 
+        System.out.println("Removing element at index 1: " + list.remove(1));
+        System.out.println("Element at index 0: " + list.get(0));
+        System.out.println("Element at index 1: " + list.get(1));
     }
 
 }
