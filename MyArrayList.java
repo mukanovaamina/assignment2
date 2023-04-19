@@ -51,6 +51,10 @@ public class MyArrayList<E> implements List<E> {
         }
         return (E) elements[index];
     }
+    public void add(int index, E element) {
+
+    }
+
     public int size() {
         return size;
     }
@@ -84,6 +88,7 @@ public class MyArrayList<E> implements List<E> {
 
         };
     }
+
 
 }
 
