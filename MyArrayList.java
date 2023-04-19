@@ -11,6 +11,16 @@ public class MyArrayList<E> implements List<E> {
     }
 
 
+    public boolean remove(Object o) {
+        return false;
+    }
+
+
+    public boolean containsAll(Collection<?> c) {
+        return false;
+    }
+
+
     public boolean add(E element) {
         if (size == elements.length) {
             Object[] newElements = new Object[elements.length * 2];
@@ -60,6 +70,7 @@ public class MyArrayList<E> implements List<E> {
 
         };
     }
+
 
 
 }
