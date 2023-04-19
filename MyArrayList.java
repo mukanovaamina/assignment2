@@ -100,6 +100,15 @@ public class MyArrayList<E> implements List<E> {
         elements[--size] = null;
         return removedElement;
     }
+    public int indexOf(Object o) {
+        return 0;
+    }
+
+    public int lastIndexOf(Object o) {
+        return 0;
+    }
+
+
 }
 
 
