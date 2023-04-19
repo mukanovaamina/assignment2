@@ -89,7 +89,17 @@ public class MyArrayList<E> implements List<E> {
         };
     }
 
-
+    public E remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        E removedElement = (E) elements[index];
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
+        }
+        elements[--size] = null;
+        return removedElement;
+    }
 }
 
 
