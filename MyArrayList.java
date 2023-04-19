@@ -118,6 +118,14 @@ public class MyArrayList<E> implements List<E> {
     public List<E> subList(int fromIndex, int toIndex) {
         return null;
     }
+    public Object[] toArray() {
+        return new Object[0];
+    }
+
+    public <T> T[] toArray(T[] a) {
+        return null;
+    }
+
 
 
 
