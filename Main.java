@@ -9,4 +9,5 @@ public class Main {
         System.out.println("Original list: " + myList);
         System.out.println("Element at index 2: " + myList.get(2));
     }
+
 }
