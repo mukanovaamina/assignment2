@@ -25,6 +25,14 @@ public class Main {
             System.out.print(obj + " ");
         }
         System.out.println();
+        MyLinkedList<String> list = new MyLinkedList<String>() {};
+
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        System.out.println("Original list: " + list);
+
+
     }
 
 }
