@@ -8,6 +8,8 @@ public class Main {
         myList.add(20);
         System.out.println("Original list: " + myList);
         System.out.println("Element at index 2: " + myList.get(2));
+        System.out.println("Does list contain 15? " + myList.contains(15));
+        System.out.println("Does list contain 25? " + myList.contains(25));
     }
 
 }
