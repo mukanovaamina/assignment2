@@ -17,5 +17,17 @@ private static class Node<E> {
     }
 
 }
+    public boolean add(E element) {
+        Node<E> newNode = new Node<>(element, null, tail);
+        if (tail == null) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
+        }
+        tail = newNode;
+        size++;
+        return true;
+    }
+
 
 }
