@@ -19,6 +19,12 @@ public class Main {
             System.out.print(iterator.next() + " ");
         }
         System.out.println();
+
+        Object[] arr = myList.toArray();
+        for (Object obj : arr) {
+            System.out.print(obj + " ");
+        }
+        System.out.println();
     }
 
 }
