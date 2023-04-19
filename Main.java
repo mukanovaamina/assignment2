@@ -40,6 +40,7 @@ public class Main {
         System.out.println("Element at index 0: " + list.get(0));
         System.out.println("Element at index 1: " + list.get(1));
         System.out.println("Size of the list: " + list.size());
+        System.out.println("Is the list empty? " + list.isEmpty());
     }
 
 }
