@@ -91,7 +91,7 @@ private static class Node<E> {
             return false;
         }
         Node<E> nextNode = current.next;
-        if (nextNode.data.equals(current.data)) {
+        if (nextNode.equals(current.next)) {
             current.next = nextNode.next;
             return true;
         }
