@@ -10,7 +10,6 @@ public class MyArrayList<E> implements List<E> {
         size = 0;
     }
 
-
     public boolean remove(Object o) {
         return false;
     }
@@ -36,6 +35,14 @@ public class MyArrayList<E> implements List<E> {
         }
         elements[size++] = element;
         return true;
+    }
+    public boolean deleteDuplicate(int index){
+        for (int i = 0; i < size; i++) {
+            if (elements[i] != elements[i + 1] || elements[i] != elements[i + 2]){
+                    return true;
+            }
+        }
+        return false;
     }
     public boolean retainAll(Collection<?> c) {
         return false;
@@ -125,9 +132,6 @@ public class MyArrayList<E> implements List<E> {
     public <T> T[] toArray(T[] a) {
         return null;
     }
-
-
-
 
 }
 
