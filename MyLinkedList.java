@@ -77,12 +77,25 @@ private static class Node<E> {
         return current.element;
     }
 
-    public boolean deleteDublicate(int index){
-       Node<E> current= head;
-       while(current!=current.next){
-           return true;
-       }
-       return false;
+    public boolean deleteDuplicate(int index) {
+        if (head == null || index < 0) {
+            return false;
+        }
+        Node<E> current = head;
+        int i = 0;
+        while (current != null && i < index - 1) {
+            current = current.next;
+            i++;
+        }
+        if (current == null || current.next == null) {
+            return false;
+        }
+        Node<E> nextNode = current.next;
+        if (nextNode.data.equals(current.data)) {
+            current.next = nextNode.next;
+            return true;
+        }
+        return false;
     }
     public int size() {
         return size;
