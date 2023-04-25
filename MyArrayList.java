@@ -36,12 +36,22 @@ public class MyArrayList<E> implements List<E> {
         elements[size++] = element;
         return true;
     }
-    public boolean deleteDuplicate(int index){
-        for (int i = 0; i < size; i++) {
-            if (elements[i] != elements[i + 1] || elements[i] != elements[i + 2]){
-                    return true;
-            }
+    public boolean deleteDuplicate(int index) {
+        if (index < 0 || index >= size - 1) {
+            return false;
         }
+
+        if (elements[index] == elements[index + 1]) {
+
+            for (int i = index; i < size - 1; i++) {
+                elements[i] = elements[i + 1];
+            }
+
+            size--;
+
+            return true;
+        }
+
         return false;
     }
     public boolean retainAll(Collection<?> c) {
