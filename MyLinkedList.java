@@ -76,6 +76,14 @@ private static class Node<E> {
         size--;
         return current.element;
     }
+
+    public boolean deleteDublicate(int index){
+       Node<E> current= head;
+       while(current!=current.next){
+           return true;
+       }
+       return false;
+    }
     public int size() {
         return size;
     }
@@ -93,6 +101,27 @@ private static class Node<E> {
             current = current.next;
         }
         return false;
+    }
+
+
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            private Node<E> current = head;
+
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            public E next() {
+                E element = current.element;
+                current = current.next;
+                return element;
+            }
+
+            public void remove() {
+                throw new UnsupportedOperationException();
+            }
+        };
     }
 
 
