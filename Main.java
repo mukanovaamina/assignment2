@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Removing element at index 1: " + myList.remove(1));
         System.out.println("Updated list: " + myList);
         System.out.println("Size of list: " + myList.size());
+        System.out.println("Does the list delete all dublicates? " + myList.deleteDuplicate(0));
 
         Iterator<Integer> iterator = myList.iterator();
         while (iterator.hasNext()) {
@@ -30,6 +31,7 @@ public class Main {
         list.add("A");
         list.add("B");
         list.add("C");
+        list.add("D");
         System.out.println("Original list: " + list);
 
         System.out.println("Element at index 0: " + list.get(0));
@@ -43,6 +45,7 @@ public class Main {
         System.out.println("Is the list empty? " + list.isEmpty());
         System.out.println("Does the list contain 'A'? " + list.contains("A"));
         System.out.println("Does the list contain 'D'? " + list.contains("D"));
+        System.out.println("Does the list delete all dublicates? " + list.deleteDublicate(3));
 
         Iterator<String> itterator = list.iterator();
         while (itterator.hasNext()) {
